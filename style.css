@@ -1,0 +1,204 @@
+.main__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ==========================hero design start ========================================
+*/
+
+.main__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* .main__conatainer__wrapper  */
+
+/* .main__container__tight */
+
+.hero_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero_left {
+  flex-basis: 45%;
+}
+
+.hero_heading {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 62px;
+  color: #14a800;
+  margin-bottom: 20px;
+}
+
+.hero_details {
+  color: #65735b;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: -0.002em;
+  font-weight: 500;
+  max-width: 34ch;
+  margin-top: 0px;
+}
+
+.hero_button {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.hero_button_left {
+  background-color: #14a800;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+.hero_button_right {
+  margin-left: 20px;
+  border: 1px solid #14a800;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #14a800;
+}
+.hero_icon p {
+  color: #65735b;
+  font-size: 20px;
+}
+
+.hero_icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero_right {
+  flex-basis: 45%;
+}
+.hero_button_left:hover {
+  background-color: #3c8224;
+}
+.hero_button_right:hover {
+  background-color: #f2f7f2;
+}
+
+/* Use a media query to add a breakpoint at 667px: */
+
+@media screen and (max-width: 667px) {
+  .hero_right {
+    display: none;
+  }
+  .hero_left {
+    flex-basis: 100%;
+  }
+  .hero_icons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    flex-direction: column;
+  }
+  .hero_details {
+    width: 100%;
+  }
+  .hero_button_right {
+    display: column;
+  }
+}
+/* hero design end */
+/* Talent section design *********************************************************
+*/
+
+.talent-wrapper {
+  background-image: url("./image/find-talent.webp");
+  max-width: 1250px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 30px 0;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .talent-wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.talent-wrapper h4,
+.talent-wrapper p {
+  font-family: sans-serif;
+}
+.talent-wrapper h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  max-width: 200px;
+}
+.talent-wrapper p {
+  max-width: 41%;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.service-card {
+  background-color: #14a800;
+  border-radius: 15px;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  flex-basis: 32%;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .service-cards {
+    flex-direction: column;
+  }
+  .service-card {
+    margin: 10px 0;
+  }
+  .talent-wrapper p {
+    max-width: 100%;
+  }
+}
+.service-card:hover {
+  background-color: #fff;
+  color: #14a800;
+}
+.service-card:hover span svg {
+  fill: #14a800;
+}
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 1;
+  font-family: sans-serif;
+}
+@media (max-width: 1023px) {
+  .service-card h3 {
+    font-size: 24px;
+  }
+}
+.service-card span {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.service-card span svg {
+  margin-left: 5px;
+}
+
+/* Talent section design  ends*/
